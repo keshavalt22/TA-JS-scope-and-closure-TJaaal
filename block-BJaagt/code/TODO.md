@@ -21,6 +21,9 @@ The above code will throw an error `Reference Error username is not defined`.
 }
 console.log(useranme); // output
 ```
+In above code we are looking for the variable named `usename`. There is no variable named `username` in the global scope. The variable is inside the curly brakets and we can't access the variable defined inside a function from outside.
+
+The above code will throw an error `Reference Error username is not defined`.
 
 3. Go through the code below and write down the process of making decision about looking for the variable. Also write the output of the code below.
 
@@ -30,6 +33,7 @@ if (true) {
 }
 console.log(useranme); // output
 ```
+It will again throw the same error message as username is inside the if else satement and we will not be able to acess it from the outside.
 
 4. Go through the code below and write down the process of making decision about looking for the variable. Also write the output of the code below.
 
@@ -39,6 +43,7 @@ if (true) {
 }
 console.log(useranme); // output
 ```
+It will again throw the same error message as username is inside the if else satement and we will not be able to acess it from the outside.
 
 5. Go through the code below and write down the process of making decision about looking for the variable. Also write the output of the code below.
 
@@ -49,6 +54,7 @@ if (true) {
 }
 console.log(useranme); // output
 ```
+It is throwing an error message of username already exist as username has been defined twise. 
 
 6. Go through the code below and write down the process of making decision about looking for the variable. Also write the output of the code below.
 
@@ -59,6 +65,7 @@ if (true) {
 }
 console.log(useranme); // output
 ```
+error message of username does not exist.
 
 7. Go through the code below and write down the process of making decision about looking for the variable. Also write the output of the code below.
 
