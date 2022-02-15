@@ -40,6 +40,7 @@ function multiplyArrayByN(arr, n) {
 }
 
 let numbers = multiplyArrayByN(marks);
+
 ```
 
 Create the execution context diagram of the following code line by line.
