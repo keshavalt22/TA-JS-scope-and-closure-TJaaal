@@ -21,9 +21,7 @@ The above code will throw an error `Reference Error username is not defined`.
 }
 console.log(useranme); // output
 ```
-In above code we are looking for the variable named `usename`. There is no variable named `username` in the global scope. The variable is inside the curly brakets and we can't access the variable defined inside a function from outside.
-
-The above code will throw an error `Reference Error username is not defined`.
+It will again throw the same error message as username is defined using const which makes a scope inside a block.
 
 3. Go through the code below and write down the process of making decision about looking for the variable. Also write the output of the code below.
 
@@ -33,7 +31,7 @@ if (true) {
 }
 console.log(useranme); // output
 ```
-It will again throw the same error message as username is inside the if else satement and we will not be able to acess it from the outside.
+It will again throw the same error message as username is defined using let which makes a scope inside a block.
 
 4. Go through the code below and write down the process of making decision about looking for the variable. Also write the output of the code below.
 
@@ -41,9 +39,9 @@ It will again throw the same error message as username is inside the if else sat
 if (true) {
   var username = 'Arya';
 }
-console.log(useranme); // output
+console.log(useranme); // 
 ```
-It will again throw the same error message as username is inside the if else satement and we will not be able to acess it from the outside.
+Arya, Becouse var does not buit any scope.
 
 5. Go through the code below and write down the process of making decision about looking for the variable. Also write the output of the code below.
 
@@ -52,9 +50,9 @@ let username = 'John';
 if (true) {
   var username = 'Arya';
 }
-console.log(useranme); // output
+console.log(username); // output
 ```
-It is throwing an error message of username already exist as username has been defined twise. 
+It is throwing an error message of username already exist as username has been defined two time. 
 
 6. Go through the code below and write down the process of making decision about looking for the variable. Also write the output of the code below.
 
@@ -63,9 +61,9 @@ let username = 'John';
 if (true) {
   let username = 'Arya';
 }
-console.log(useranme); // output
+console.log(usename); // output
 ```
-error message of username does not exist.
+John, As it has been defined in global scope.
 
 7. Go through the code below and write down the process of making decision about looking for the variable. Also write the output of the code below.
 
@@ -75,8 +73,9 @@ function sayHello() {
   let username = 'Arya';
 }
 sayHello();
-console.log(useranme); // output
+console.log(username); // output
 ```
+John, As it has been defined in global scope.
 
 8. Go through the code below and write down the process of making decision about looking for the variable. Also write the output of the code below.
 
