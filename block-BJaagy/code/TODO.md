@@ -71,7 +71,9 @@ console.log(alphabet); //prints 'abcd'
 function filter(arr, cb) {
   let final = [];
   for(let elm of arr){
-    final.push(cb(elm))
+    if(cb(elm)){
+      final.push(elm)
+    }
   }
   return final;
 }
