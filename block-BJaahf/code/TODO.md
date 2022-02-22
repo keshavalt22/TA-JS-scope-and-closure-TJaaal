@@ -11,7 +11,7 @@
 
 ```js
 function loop() {
-  // Your code goes here
+  for(let )
 }
 
 loop(
