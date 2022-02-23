@@ -5,6 +5,13 @@
 ```js
 // Your code goes here
 
+function multiplyBy(numA){
+  return function(numB){
+    let newNum = numA * numB;
+  }
+  return newNum
+}
+
 const double = multiplyBy(2);
 const final = double(15); // final should be 30
 ```
@@ -13,6 +20,12 @@ const final = double(15); // final should be 30
 
 ```js
 // Your code goes here
+
+function fullName(firstName) {
+  return function(lastName){
+    console.log(`${firstName} ${lastName}`);
+  }
+}
 
 const name = fullName('Will');
 const final = name('Smith'); // final should be "Will Smith"
@@ -23,6 +36,11 @@ const final = name('Smith'); // final should be "Will Smith"
 ```js
 function isInBetween(a, b) {
   // your code goes here
+  return function(num){
+    if(num > a && num < b){
+      return true;
+    }
+  }
 }
 
 const isChild = isInBetween(10, 100);
